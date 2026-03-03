@@ -3,73 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Знакомство с HTML тегами. Часть №2</title>
+    <title>Знакомство с HTML тегами. Часть №3</title>
 </head>
 <body>
-    <h1>Заголовок</h1>
-    <p>Текст №1</p>
-    <p>
-        <span>
-            <a href="">Текст №2</a>
-        </span>
-    </p>
-    <p>Текст №3</p>
-    <h2>Заголовок 2</h2>
-    <ol>
-        <li>содержимое списка</li>
-        <li>содержимое списка</li>
-        <li>содержимое списка</li>
-        <li>содержимое списка</li>
-    </ol>
-    <h2>Заголовок 2.1</h2>
-    <p>Текст №4</p>
-    <img src="./img/image.png" alt="">
-    <p>Текст №5</p>
-    <p>Текст №6</p>
-    <h2>Заголовок 2.2</h2>
-    <ul>
-        <li>содержимое списка</li>
-        <li>содержимое списка</li>
-        <li>содержимое списка</li>
-        <li>содержимое списка</li>
-        <li>содержимое списка</li>
-    </ul>
-    <h2>Заголовок 2.3</h2>
-    <p>Текст №6 <br> lopem</p>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+            <p>Имя</p>
+            <input placeholder="Имя" tabindex="1" type="text" name="username" id="">
+        </div>
+        <div>
+            <p>Пароль</p>
+            <input tabindex="2" type="password" name="userpass" id="">
+        </div>
+        <div>
+            <p>Телефон</p>
+            <input tabindex="3" type="tel" name="userphone" id="">
+        </div>
+        <div>
+            <p>Пол</p>
+            <div>
+                <input tabindex="4" checked type="radio" name="gender" value="male" id=""> Мужской
+            </div>
+            <div>
+                <input tabindex="4" type="radio" name="gender" value="female" id=""> Женский
+            </div>
+        </div>
+        <div>
+            <p>Имущество</p>
+            <div>
+                <input tabindex="5" checked type="checkbox" name="bike" id="yes">Велик
+            </div>
+            <div>
+                <input tabindex="6" type="checkbox" name="car" id="yes">Машина
+            </div>
+            <div>
+                <input tabindex="7" disabled type="checkbox" name="house" id="yes">Дом
+            </div>
+        </div>
+        <div>
+            <p>Дополнительная информация</p>
+            <textarea tabindex="8" name="text" id=""></textarea>
+        </div>
+        <div>
+            <p>Прикрепить фото</p>
+            <input tabindex="9" type="file" name="userfoto" id="">
+        </div>
+        <div>
+            <p>Любимый цвет</p>
+            <select tabindex="10" name="color" id="">
+                <option value="red">Красный</option>
+                <option value="green">Зеленый</option>
+                <option selected value="yellow">Желтый</option>
+            </select>
+        </div>
+        <div>
+            <p>Действия</p>
+            <button tabindex="11" type="submit">Отправить</button>
+            <button tabindex="12" type="reset">Очистить</button>
+        </div>
+    </form>
+    <!-- 
+    <form action="#" method="post" enctype="multipart/form-data"></form>
     <div>
-    <!-- Только один раз
-    <h1>Содержимое тега h1</h1>
-         Много раз 
-    <h2>Содержимое тега h2</h2>
-    <h3>Содержимое тега h3</h3>
-    <h4>Содержимое тега h4</h4>
-    <h5>Содержимое тега h5</h5>
-    <h6>Содержимое тега h6</h6>
-<Блочный тег
-    <p>Абзац №1 <span>Lorem ipsum dolor sit amet consectetur,</span> adipisicing elit. <br> Nostrum porro facere quam, ab nobis, aliquid vero quo veniam reprehenderit vitae odit eum quasi quidem nam. Accusantium itaque repudiandae id nihil!</p>
-    <p>Абзац №2 <a href="http://google.com">Lorem ipsum dolor</a> sit amet consectetur, adipisicing elit. Nostrum porro facere quam, ab nobis, aliquid vero quo veniam reprehenderit vitae odit eum quasi quidem nam. Accusantium itaque repudiandae id nihil!</p>
-
-    <span>содержимое тега span №1</span>
-    <span>содержимое тега span №2</span>
-    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia quasi iusto pariatur aut dolorum. Enim reiciendis soluta iure mollitia facere! Nam, possimus quibusdam id ullam facilis perspiciatis labore fugiat?</span>
-
-    <img src="./img/image.png" alt="ой картинки нет :(">
-
-    <ul>
-        <li>содержимое тега</li>
-        <li>содержимое тега</li>
-        <li>содержимое тега</li>
-        <li>содержимое тега</li>
-    </ul>
-    <ol>
-        <li>содержимое тега</li>
-        <li>содержимое тега</li>
-        <li>содержимое тега</li>
-        <li>содержимое тега</li>
-    </ol>
-
-    <br>
-    -->
+        <input tabindex="1" placeholder="Подпись сюда" type="text" name="username" value="">
     </div>
+    <div>
+        <input type="tel" name="userphone" value="">
+    </div>
+    <div>
+        <input type="password" name="userpass" value="">
+    </div>
+    <div>
+        <p><input checked type="radio" name="beer" value="lager">Светлое пиво</p>
+        <p><input type="radio" name="beer" value="dark">Темное пиво</p>
+    </div>
+    <br>
+    <div>
+        <p><input type="radio" name="beer2" value="lager">Светлое пиво</p>
+        <p><input type="radio" name="beer2" value="dark">Темное пиво</p>
+    </div>
+    <br>
+    <div>
+        <p><input type="checkbox" name="car" value="yes">Наличие авто</p>
+        <p><input checked type="checkbox" name="car2" value="yes">Наличие авто</p>
+        <p><input type="checkbox" name="car3" value="yes">Наличие авто</p>
+        <p><input checked type="checkbox" name="car4" value="yes">Наличие авто</p>
+    </div>
+    <br>
+    <div>
+        <p><input type="file" name="foto"></p>
+    </div>
+    <br>
+    <div>
+        <textarea name="text"></textarea>
+    </div>
+    <br>
+    <div>
+        <select name="color">
+            <option value="red">Красный</option>
+            <option selected value="red">Желтый</option>
+            <option value="red">Голубой</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <button type="submit">Отправить</button>
+    </div> -->
 </body>
 </html>
