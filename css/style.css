@@ -99,3 +99,33 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 .red {
     color: #ff0000;
 }
+.textright {
+    text-align: right;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+.center {
+    text-align: center;
+}
+
+.linethrough {
+    text-decoration: line-through;
+}
+
+.weight {
+    font-size: 13px;
+}
+
+.shadow {
+    text-shadow: 1px 1px 1px black;
+}
