@@ -38,41 +38,67 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 body {
     background-color: aliceblue;
     padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.text {
-    font-size: 24px;
-    line-height: 33px;
-    margin: 0 0 30px 0;
-}
-/* задает стиль первой строке текста */
-.text::first-line {
-    color: green;
+/* .block {
+    border: 5px solid red;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 800px;
+    position: relative;
 }
 
-.text::first-letter {
-    color: red;
-    font-size: 50px;
+.block div {
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
 }
+
+.block__1 {
+    background-color: yellow;
+  
+
+}
+
+.block__2 {
+    background-color: lightpink;
+    color: white;
+    position: fixed;;
+}
+
+.block__3 {
+    background-color: aquamarine;
+}
+
+.block__4 {
+    background-color: yellow;
+    position: sticky;
+} */
+/* position: static; стоит по умолчанию */
+/* position: relative; устанавливается относительно его изначального положения в коде (left, top, right, bottom, z-index) */
+/* position: absolute; блок вырывается из html-разметки, его можно применять, когда нужно позиционировать элемент, относительно его родителя (присвоить родителю position: relative;)*/
+/* position: fixed; блок вырывается из потока, но фиксируется суггубо по окну браузера и фиксирует его */
+/* position: sticky; блок становится солянкой позиций static и fixed Задавая значения left, top, right, bottom элемент будет статичен до того момента, пока верхняя граница браузера не достигает границ элемента, блока. Тогда он становится fixed */
+/* опасность абсолютного позиционирования: они вырываются из кода и не влияют на другие блоки */
+
 .list {
+    font-size: 18px;
     list-style: none;
 }
 
-.list li:before {
-    content:'';
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: red;
-    display: inline-block;  
-    margin: 0 10px 0 0;
-
-}
-
-.list li:after {
-    content:'';
-}
 .list li {
-    font-size: 24px;
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
+    position: relative;
+    padding: 0 0 0 30px;
 }
 
+.list li:before {
+    content: '';
+    background: url(/img/right-md-svgrepo-com.svg) 0-0 no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    left: 0;
+}
