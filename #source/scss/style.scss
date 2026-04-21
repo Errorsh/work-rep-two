@@ -1,0 +1,85 @@
+// 3. Импорт - удобство в импортировании заранее записанных стилей в рабочую кодовую сферу
+@import "nullstyle.scss";
+
+// 2. Переменные - удобство и скорость заранее записанных значений для правил
+$fz:100px;
+$color_1:#000;
+$color_2:#fff;
+// 4. Шаблоны - с помощью @extend копируем загатовленные шаблоны. Можно также записывать шаблоны как названия классов, даже если их нет в html-разметке
+%tplborder {
+    font-size: 100px;
+    border-bottom: 5px dashed red;
+}
+// 5. Миксиеы - работают как шаблоны, только еще круче. С помощью @include мы копируем название миксина и внутри скобок пишем значение правила. После записи значение правила миксина будет меняться, в зависимости от его значения в скобках. 
+@mixin fontz($f,$c) {
+    font-size: $f;
+    color: $c;
+}
+
+.block {
+    width: 300px / 960px * 100%;
+    background-color: #666;
+    padding: 30px;
+    line-height: 60px;
+    // 1. Вложенность - способность писать правила css внутри других правил
+    .block__text {
+        font-size: $fz;
+        span {
+            color: green;
+        }
+    }
+}
+.link {
+    @include fontz(80px,green);
+    color: $color_1;
+    text-decoration: underline;
+    font-size: $fz;
+    .block & {
+        font-size: $fz;
+    }
+    
+    &:hover {
+        color: $color_2;
+    }
+    @extend %tplborder;
+}
+.link-2 {
+    @include fontz(100px,green);
+    @extend %tplborder;
+    border-bottom: 5px dashed #000;
+}
+
+// 6. Комментирование - два слэша и комментыв в scss не будут переписываться в css
+
+// block 
+//     fz14
+//     lh20... 
+// это уже просто sass, где код пишется без фигурных скобок и точек с запятой.
+// оператор & - and, и 
+
+
+// &:active {
+    
+// }
+// &:focus {
+    
+// }
+// &:before {
+    //     content: '';
+    // }
+    // &:after {
+        //     content: '';
+        // }
+        
+        // >p {
+            //     color: red;
+            // }
+        
+        
+            
+            // &.block--big {
+            //     font-size: 100px;
+            // }
+            
+            
+            
