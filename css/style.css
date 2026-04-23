@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+@font-face {
+  font-family: "PFDinTextCondPro";
+  src: url("../fonts/PFDinTextCondPro-Regular.eot");
+  src: url("../fonts/PFDinTextCondPro-Regular.eot?#iefix") format("embedded-opentype"), url("PFDinTextCondPro-Regular.woff2") format("woff2"), url("PFDinTextCondPro-Regular.woff") format("woff"), url("PFDinTextCondPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PFDinTextCompPro";
+  src: url("../fonts/PFDinTextCompPro-Medium.eot");
+  src: url("../fonts/PFDinTextCompPro-Medium.eot?#iefix") format("embedded-opentype"), url("PFDinTextCompPro-Medium.woff2") format("woff2"), url("PFDinTextCompPro-Medium.woff") format("woff"), url("PFDinTextCompPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   padding: 0;
   margin: 0;
@@ -66,40 +83,42 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.link-2, .link {
-  font-size: 100px;
-  border-bottom: 5px dashed red;
+.original {
+  margin: 0px 0px 30px 0px;
+  font-size: 30px;
+  line-height: 35px;
+}
+.original p {
+  margin: 0px 0px 30px 0px;
 }
 
-.block {
-  width: 31.25%;
-  background-color: #666;
-  padding: 30px;
-  line-height: 60px;
+.text {
+  font-family: "PT Sans";
+  font-size: 30px;
+  line-height: 35px;
+  margin: 0px 0px 30px 0px;
 }
-.block .block__text {
-  font-size: 100px;
-}
-.block .block__text span {
-  color: green;
+.text p {
+  margin: 0px 0px 30px 0px;
 }
 
-.link {
-  font-size: 80px;
-  color: green;
-  color: #000;
-  text-decoration: underline;
-  font-size: 100px;
+.text-PFDin {
+  font-family: "PFDinTextCondPro";
+  font-size: 30px;
+  line-height: 35px;
+  margin: 0px 0px 30px 0px;
 }
-.block .link {
-  font-size: 100px;
-}
-.link:hover {
-  color: #fff;
+.text-PFDin p {
+  margin: 0px 0px 30px 0px;
 }
 
-.link-2 {
-  font-size: 100px;
-  color: green;
-  border-bottom: 5px dashed #000;
+.text-PFDinMedium {
+  font-family: "PFDinTextCondPro";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  margin: 0px 0px 30px 0px;
+}
+.text-PFDinMedium p {
+  margin: 0px 0px 30px 0px;
 }
