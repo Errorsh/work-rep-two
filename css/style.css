@@ -1,20 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
-@font-face {
-  font-family: "PFDinTextCondPro";
-  src: url("../fonts/PFDinTextCondPro-Regular.eot");
-  src: url("../fonts/PFDinTextCondPro-Regular.eot?#iefix") format("embedded-opentype"), url("PFDinTextCondPro-Regular.woff2") format("woff2"), url("PFDinTextCondPro-Regular.woff") format("woff"), url("PFDinTextCondPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "PFDinTextCompPro";
-  src: url("../fonts/PFDinTextCompPro-Medium.eot");
-  src: url("../fonts/PFDinTextCompPro-Medium.eot?#iefix") format("embedded-opentype"), url("PFDinTextCompPro-Medium.woff2") format("woff2"), url("PFDinTextCompPro-Medium.woff") format("woff"), url("PFDinTextCompPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 * {
   padding: 0;
   margin: 0;
@@ -83,42 +66,25 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.original {
-  margin: 0px 0px 30px 0px;
-  font-size: 30px;
-  line-height: 35px;
+.practice__title {
+  margin: 0 0 30px 0;
 }
-.original p {
-  margin: 0px 0px 30px 0px;
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  position: relative;
+  text-align: center;
+  padding: 0 0 30px 0;
 }
-
-.text {
-  font-family: "PT Sans";
-  font-size: 30px;
-  line-height: 35px;
-  margin: 0px 0px 30px 0px;
-}
-.text p {
-  margin: 0px 0px 30px 0px;
-}
-
-.text-PFDin {
-  font-family: "PFDinTextCondPro";
-  font-size: 30px;
-  line-height: 35px;
-  margin: 0px 0px 30px 0px;
-}
-.text-PFDin p {
-  margin: 0px 0px 30px 0px;
-}
-
-.text-PFDinMedium {
-  font-family: "PFDinTextCondPro";
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 35px;
-  margin: 0px 0px 30px 0px;
-}
-.text-PFDinMedium p {
-  margin: 0px 0px 30px 0px;
+.title:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  background-color: #000;
+  margin: 0 0 0 -25px;
 }
