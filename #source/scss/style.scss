@@ -49,9 +49,24 @@
 }
 .item-practice {
     &__icon {
+        border-radius: 50%;
+        width: 92px;
+        height: 92px;
+        border: 2px solid #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px 40px 0px;
     }
     &__title {
+        text-align: center;
+        color: #000;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 3.52px;
+        margin: 0px 0px 35px 0px;
     }
     &__text {
+        text-align: center;
     }
 }
