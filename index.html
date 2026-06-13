@@ -1,166 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Важные мета атрибуты
+    первые атирбуты мета тега - отвечают за то, для чего будет использоваться данный мета-тег, а атрибут content - значение данного свойства.
+    
+    4 категории:
+    1. Отображение контента.
+    2. Теги для SEO. (search engine optimization - комплекс действий, которые помогают потенциальным клиентам быстро найти ваш сайт в поисковых системах)
+    3. Технические метатеги.
+    4. Теги для соцсетей. -->
+
+    <!-- Кодировка страницы -->
     <meta charset="UTF-8">
+    <!-- Настройки адаптивности страницы -->
+    <!-- Фиксировання ширина -->
+    <!-- <meta name="viewport" content="width=1170" -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Адаптивность  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- Отключает формирование ссылки  номера телефона на iOS -->
+    <meta name="format-detectiob" content="telephone=no">
+    <meta http-equiv="" content=""> <!-- устаревшая форма meta charset -->
+
+    <!-- Краткое описание страницы -->
+    <meta name="description" content="Что такое метатеги и дял чего они нужны">
+    <!-- Ключевые слова -->
+    <meta name="keywords" content="мета теги, meta , мета теги для seo">
+
+    <!-- Управление доступом поисковых роботов к странице -->
+    <!-- <meta name="robots" content=""> -->
+
+    
+    <!-- Запрет индексации ссылок и изображений на странице -->
+    <!-- <meta name="robots" content="noimageindex, nofollow"> -->
+    
+    <!-- Запрет индексации страницы полностью
+    <meta name="robots" content="noindex, nofollow">
+     или -->
+    <meta name="robots" content="none"> 
+
+    <!-- Автор странциы -->
+    <meta name="Author" content="Дарт Вейдер">
+    <!-- Авторские права -->
+    <meta name="Copyright" content="Люк Скайуокер">
+    <!-- Адрес автора -->
+    <meta name="Address" content="Татуин, кратер №97"> 
+
+    <!-- Редирект (перезагрузка) страницы. -->
+    <!-- Задержка в секундах; url=адрес сайта/страницы -->
+    <meta http-equiv="refresh" content="5; url=index.html">
+
+
+    <meta property="" content="">
+
+
     <link rel="stylesheet" href="./css/style.css">
-    <title>Методология БЭМ</title>
-    <!-- Блок
-        Элемент
-        Модификатор -->
-
-        <!-- Блок - это функциорнально независимый компонент страницы, который может быть использован множество раз. Когда задаем блоку имя класса, оно должно отвечать на вопрос "Что это?", а не "Какой?" и "Как выглядит?"
-        
-        Блоки можно вкладывать друг в друга
-        Допустима любая вложенность блоков-->
-
-        <!-- Элемент - составная часть блока, которая не может использоваться в отрыве от него. Оно должно отвечать на вопрос "Что это?" 
-        
-        Синтаксис - имяклассаблока__имяэлемента
-        Элементы можно вкладывать друг в друга
-        Допустима любая вложенность Элементов
-        
-        Элемент это всегда часть блока
-        Элемент ВСЕГДА должен быть частью блока 
-        Элемент это не всегда обязательный компонент блока-->
-
-        <!-- Модификатор - дополняет/уточняет стиль блока либо элемента. Оно должно отвечать на вопрос "Какой?", "Как выглядит?", "Состояние?"
-        Синтаксис - имяклассаблока_модификатор
-        Синтаксис - имяклассаблока__элемент_модификатор -->
-
-        <!-- Микс - позволяет использовать и блоки, и элементы в одном объекте -->
-    </head>
-    <body>
-    <main class="main">
-        <!-- Блок -->
-        <div class="theory">
-            <!-- Вложенный блок -->
-            <div class="title"></div>
-            <!-- Вложенный блок -->
-            <div class="subtitile"></div>
-            <!-- Блок -->
-        <nav class="menu">
-            <!-- Элемента блока -->
-            <a href="" class="menu__link"></a>
-            <a href="" class="menu__link"></a>
-            <a href="" class="menu__link"></a>
-            <a href="" class="menu__link"></a>
-        </nav>
-
-        <!-- Вложенность элементов -->
-
-        <!-- Верно -->
-        <!-- Блок row -->
-        <div class="row">
-            <!-- Элемент columm -->
-            <div class="row__column">
-                <!-- Элемент item -->
-                <div class="row__item"></div>
-            </div>
-        </div>
-
-        <!-- Неверно -->
-        <!-- Блок row -->
-        <div class="row">
-            <!-- Элемент column -->
-            <div class="row__column">
-                <!-- Элемент item -->
-                <div class="row__column__item"></div>
-            </div>
-        </div>
-
-        <!-- Принадлежность элементов -->
-
-        <!-- Верный пример -->
-
-        <!-- Блок about -->
-         <div class="about">
-            <!-- Элемент title -->
-            <div class="about__title"></div>
-             <!-- Элемент subtitle -->
-            <div class="about__subtitle"></div>
-         </div>
-
-        <!-- Неверный пример -->
-         
-        <!-- Блок about -->
-         <div class="about">
-            <!-- Элемент title -->
-            <div class="about__title"></div>
-        </div>
-        <!-- Элемент subtitle -->
-        <div class="about__subtitle"></div>
-
-        <!-- Необязательность элементов -->
-        <!-- Блок about -->
-        <div class="about">
-            <!-- Вложенный блок title -->
-            <div class="title"></div>
-            <!-- Вложенный блок subtitle -->
-            <div class="subtitle"></div>
-        </div>
-
-        <!-- Модификатор -->
-        <!-- Блок menu -->
-        <nav class="menu">
-            <!-- элемент item и модификатор active -->
-            <a href="" class="meunu__item meunu__item_active">HOME</a>
-            <!-- элемент item -->
-            <a href="" class="meunu__item">ABOUT US</a>
-            <!-- элемент item -->
-            <a href="" class="meunu__item">PORTFOLIO</a>
-            <!-- элемент item -->
-            <a href="" class="meunu__item">CONTACT</a>
-        </nav>
-
-        <!-- Микс -->
-
-        <!-- Блок about -->
-        <div class="about">
-            <!-- Элемент title -->
-            <div class="about__title title"></div>
-            <!-- Элемент subtitle -->
-        <div class="about__subtitle subtitle"></div>
-        </div>
-    </div>
-    <div class="practice">
-        <div class="practice__body">
-            <div class="practice__header">
-                <div class="practice__title title">PRACTICE</div>
-                <div class="practice__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi delectus quia deserunt voluptates eligendi, saepe, alias suscipit ad, facere vitae nam tempora quis sequi? Sint placeat enim cum laboriosam quos?</div>
-            </div>
-            <div class="practice__row">
-                <div class="practice_column">
-                    <div class="item-practice">
-                        <div class="item-practice__icon">
-                            <img src="#" alt="practice1">
-                        </div>
-                        <div class="item-practice__title">WEB</div>
-                        <div class="item-practice__text">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                </div>
-                <div class="practice_column">
-                    <div class="item-practice">
-                        <div class="item-practice__icon">
-                            <img src="#" alt="practice2">
-                        </div>
-                        <div class="item-practice__title">IOS AND ANDROID</div>
-                        <div class="item-practice__text">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                </div>
-                <div class="practice_column">
-                    <div class="item-practice">
-                        <div class="item-practice__icon">
-                            <img src="#" alt="practice3">
-                        </div>
-                        <div class="item-practice__title">MARKETING</div>
-                        <div class="item-practice__text">Lorem ipsum dolor sit amet.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </main>
+    <title>МЕТА теги</title>
+</head>
+<body>
 </body>
 </html>
