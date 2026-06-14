@@ -43,6 +43,13 @@
     // wrap-reverse - оно заставляет перескакивать flex-элементы задом наперед
     // 
 
+    flex-direction: row; 
+    // flex-direction - устанавливает основную ось, по которой выстраиваются flex-элементы.
+    // Значение по умолчанию row.
+    // row-reverse - разворачивает поведение flex-элементов. Стартуют с конца и разворачиваются.
+    // column - заставляет элементы выстраиваться в колонку. ВАЖНО! при смене flex-direction с row на column меняется значение ролей у align-items и justify-content. Тут будет: align-items: горизонталь, а justify-content: вертикаль.
+    // column-reverse - старт с низа.
+
     border: 20px solid #ece89d;
     margin: 0px 0px 20px 0px;
     
