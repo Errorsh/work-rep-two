@@ -86,6 +86,25 @@ h1, h2, h3, h4, h5, h6 {
   border: 20px solid #5e5373;
 }
 
+.block__column_1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.block__column_2 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.block__column_3 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .block__item {
   background-color: #18b5a4;
   padding: 50px;
